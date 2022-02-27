@@ -82,6 +82,7 @@ public class RestAPITest {
 			conn.setRequestProperty("Accept", "application/json");
 
 			if (conn.getResponseCode() != 200) {
+				
 				throw new RuntimeException("Failed : HTTP Error code : " + conn.getResponseCode());
 			}
 			InputStreamReader in = new InputStreamReader(conn.getInputStream());
@@ -96,13 +97,16 @@ public class RestAPITest {
 			System.out.println("The name of the pet  is"+name);
 			
 			assertTrue("The petname is not as expected", name.equals(currentPetName));
-				assertTrue("The find pet by id was not successful", conn.getResponseCode()==200);
+			//	assertTrue("The find pet by id was not successful", conn.getResponseCode()==200);
 	
 			conn.disconnect();
 
 		} catch (Exception e) {
+			
 			System.out.println("Exception in RestClientGet:- " + e);
-		    //e.printStackTrace();
+		    assertTrue("The find pet by ID had an issue", false );
+			
+			//e.printStackTrace();
 		} 
 	}
 	
@@ -129,7 +133,7 @@ try( DataOutputStream wr = new DataOutputStream( conn.getOutputStream())) {
 
  System.out.println("The HTTP request is" + conn);
   if (conn.getResponseCode() != 200) {
-				throw new RuntimeException("Failed : HTTP Error code : " + conn.getResponseCode());
+	throw new RuntimeException("Failed : HTTP Error code : " + conn.getResponseCode());
 			}
 			InputStreamReader in = new InputStreamReader(conn.getInputStream());
 			BufferedReader br = new BufferedReader(in);
@@ -142,6 +146,8 @@ try( DataOutputStream wr = new DataOutputStream( conn.getOutputStream())) {
 
 		} catch (Exception e) {
 			System.out.println("Exception in RestClientGet:- " + e);
+			assertTrue("The update pet name has an issue", false );		
+	
 			//e.printStackTrace();
 		}
 		//assertTrue("The update of pet name  was not successful", conn.getResponseCode()==200);
@@ -175,6 +181,7 @@ try( DataOutputStream wr = new DataOutputStream( conn.getOutputStream())) {
 
 		} catch (Exception e) {
 			System.out.println("Exception in RestClientGet:- " + e);
+			assertTrue("The delete pet had an issue", false );
 			
 		     //e.printStackTrace();
 		}

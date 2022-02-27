@@ -21,7 +21,7 @@ public class BasePageObject {
 	String classFQNPrefix="com.rahul.testautomation.ebay";
 	String classFQN;
 	WebDriver driver;
-	private By locateBtnLocator = By.linkText("Locate us");
+	//private By locateBtnLocator = By.linkText("Locate us");
 	
 	/**
 	 * Constructor to initialize the class with the webdriver
