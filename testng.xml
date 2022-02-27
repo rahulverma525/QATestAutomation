@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="86400_UI_API_TestAutomation" parallel="false">
+  <test name="UI_TEST">
+    <classes>
+    <class name="com.rahul.testautomation.ebay.tests.UITest"></class>
+      </classes>
+  </test>
+  
+   <test name="API_TEST">
+    <classes>
+     <class name="com.rahul.testautomation.ebay.tests.RestAPITest"></class>
+      </classes>
+  </test>
+</suite>

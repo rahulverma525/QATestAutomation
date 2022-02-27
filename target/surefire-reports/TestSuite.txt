@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.556 sec <<< FAILURE! - in TestSuite
+findPetById(com.rahul.testautomation.ebay.tests.RestAPITest)  Time elapsed: 1.434 sec  <<< FAILURE!
+java.lang.AssertionError: The petname is not as expected
+	at com.rahul.testautomation.ebay.tests.RestAPITest.findPetById(RestAPITest.java:101)
+
