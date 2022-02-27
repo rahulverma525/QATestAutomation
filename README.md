@@ -24,12 +24,22 @@ The project source code  can be downloaded from the repository and build and run
 The project also includes TestNG runner class which has the main method that can be used to run the tests from command line.
 
 
-Assumptions:
+**Setup**
  
-1) Create a Reports folder under < Project Install Rool> and check the reports under the folder after the run
+1) Clone the Repository to a folder on local machine ( git clone https://<PAT>@github.com/rahulverma525/QATestAutomation)
+2) Cd to 'QATestAutomation' folder  (< Project Install Root>)
+3) Create a 'Reports' folder under <Project Install Root> (if not existing) 
+4) Go to src/test/data/ and update the excel files for the test data for UI and API test ,if and as needed:
+ 
+    a) In the API test data file, update the 'id' to be a valid pet ID of an existing pet in the petstore and its currentPetName and the name to be updated.
+    
+    b) In the GUI test data file, update the search string and the data expected to be included in the search results.
+
+5) mvn test -f "./pom.xml"
+6) Check the reports under the folder after the run
 
 
-Limitations:
+**Limitations:**
 
 Currently, recompilation is needed if the configuration needs to be changed as it is read from a Java File. 
 This can be improved by having configuration as key:value pairs in a config.properties file. 
