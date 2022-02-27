@@ -1,4 +1,7 @@
 # QATestAutomation
+
+Public Repo : https://github.com/rahulverma525/QATestAutomation.git
+
 Sample UI and API Test Automation
 
 Project is developed in Java and uses Selenium Web Driver API for UI and HttpURLConnection class for API tests.
@@ -26,7 +29,7 @@ The project also includes TestNG runner class which has the main method that can
 
 **Setup**
  
-1) Clone the Repository to a folder on local machine ( git clone https://<PAT>@github.com/rahulverma525/QATestAutomation)
+1) Clone the Repository to a folder on local machine (git clone https://github.com/rahulverma525/QATestAutomation.git)
 2) Cd to 'QATestAutomation' folder  (< Project Install Root>)
 3) Create a 'Reports' folder under <Project Install Root> (if not existing) 
 4) Go to src/test/data/ and update the excel files for the test data for UI and API test ,if and as needed:
