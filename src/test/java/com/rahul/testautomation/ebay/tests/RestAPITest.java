@@ -1,26 +1,23 @@
 package com.rahul.testautomation.ebay.tests;
 
-import org.testng.annotations.Test;
 import static org.testng.AssertJUnit.assertTrue;
 
 import java.io.BufferedReader;
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Method;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.io.*;
-import java.nio.charset.*;
+import java.nio.charset.Charset;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.rahul.testautomation.ebay.config.Constant;
 import com.rahul.testautomation.utils.ExcelUtils;
-import com.rahul.testautomation.utils.TestUtils;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -28,7 +25,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.Test;
 
 
 public class RestAPITest {

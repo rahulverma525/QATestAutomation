@@ -28,7 +28,6 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.rahul.testautomation.ebay.config.Constant;
-import com.rahul.testautomation.utils.PropertyUtils;
 import com.rahul.testautomation.utils.ExcelUtils;
 import com.rahul.testautomation.utils.TestUtils;
 import com.rahul.testautomation.ebay.pages.HomePage;
