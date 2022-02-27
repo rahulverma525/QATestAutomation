@@ -1,6 +1,0 @@
-#surefire_0
-#Sun Feb 27 18:55:10 AEDT 2022
-basedir=/Users/nitiverma/TestAutomation
-test=com.rahul.testautomation.ebay.tests.RunnerTest
-user.dir=/Users/nitiverma/TestAutomation
-localRepository=/Users/nitiverma/.m2/repository

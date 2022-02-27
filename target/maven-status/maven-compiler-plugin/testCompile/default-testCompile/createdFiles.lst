@@ -1,7 +1,0 @@
-com/rahul/testautomation/ebay/config/Constant.class
-com/rahul/testautomation/utils/TestUtils.class
-com/rahul/testautomation/ebay/tests/RunnerTest.class
-com/rahul/testautomation/ebay/tests/UITest.class
-com/rahul/testautomation/utils/PropertyUtils.class
-com/rahul/testautomation/ebay/tests/RestAPITest.class
-com/rahul/testautomation/utils/ExcelUtils.class
